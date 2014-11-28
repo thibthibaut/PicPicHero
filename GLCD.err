@@ -1,0 +1,3 @@
+Error[1028] C:\Users\Vince\MPLABXProjects\C18_Test_Project.X\src\GLCD.h 131 : #endif without matching #if
+Error[1034] C:\Users\Vince\MPLABXProjects\C18_Test_Project.X\src\GLCD.c 22 : previous definition of macro 'fastWriteHigh' does not agree
+Error[1034] C:\Users\Vince\MPLABXProjects\C18_Test_Project.X\src\GLCD.c 23 : previous definition of macro 'fastWriteLow' does not agree
