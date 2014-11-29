@@ -2,21 +2,22 @@
 #include "music.h"
 
 
-unsigned char prayer_in_c[x] = {A, A,   B,  C2,  E,  E, F,  E,  D,  D,  E,  F,  D,   F,  F,  G,  F};
-unsigned char length_pic[x] = {np, cr, no, no, np, cr, no, no, np, cr, cr, cr, no, np, cr, no, no};
+//unsigned char prayer_in_c[x] = {A, A,   B,  C2,  E,  E, F,  E,  D,  D,  E,  F,  D,   F,  F,  G,  F};
+//unsigned char length_pic[x] = {np, cr, no, no, np, cr, no, no, np, cr, cr, cr, no, np, cr, no, no};
+
+unsigned char seven_nation_army[x] = {A, Q,   A,  C2, A,  G,  F , E};
+unsigned char length_sna[x] =    {no, cr, cr, 5, 5, 5, bl, bl};
+
 
 void play_music(void) {
     unsigned char i;
     for (i = 0; i < x; i++) {
         // Play Note
-        play_note(prayer_in_c[i]);
-        Delay10KTCYx(length_pic[i]*TEMPO);
+        play_note(seven_nation_army[i]);
+        Delay100TCYx(length_sna[i]*TEMPO);
         // Silence
-        PR2 = 0b11111001;
-        T2CON = 0b00000101;
-        CCPR1L = 0b00000000;
-        CCP1CON = 0b00001100;
-        Delay10KTCYx(2);
+        play_note(Q);
+        Delay10KTCYx(1);
 
     }
 }

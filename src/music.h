@@ -34,10 +34,10 @@ extern "C" {
 #define ro 32
 
 
-#define TEMPO 1
+#define TEMPO 1000
 
 
-  #define x 17 //total number of notes in song to be played - modify for specific song
+#define x 8 //total number of notes in song to be played - modify for specific song
 
 
 
