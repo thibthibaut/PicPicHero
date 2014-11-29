@@ -15,11 +15,11 @@
 #include "music.h"
 #include "game.h"
 
-unsigned char dc;
 int i, ynote;
 
-unsigned char song_[x] = {E, E, E, E, E, E, E, G, C, D, E, F, F, F, F, F, E, E, E, E, D, D, E, D, G, A, B, C2};
-unsigned char length_[x] = {1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1};
+//unsigned char song_[x] = {E, E, E, E, E, E, E, G, C, D, E, F, F, F, F, F, E, E, E, E, D, D, E, D, G, A, B, C2};
+//unsigned char length_[x] = {1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1};
+
 
 /*
  * 
@@ -48,22 +48,14 @@ void main(void) {
 
 
     //--------------------TEST--------------------------
-    display_row(C, 0);
-    display_row(D, 12);
-    display_row(E, 22);
-    display_row(F, 32);
-    display_row(G, 42);
-    display_row(A, 52);
-    display_row(B, 62);
-    display_row(C2, 72);
-    display_row(Q, 82);
+  
     
 
     //---------END TEST----------------------------------3
 
    // ynote=0;
     while(1){
-        //play_music();
+        play_music();
 
         //glcd_SetCursor(ynote, 6);
         //glcd_WriteChar8X8('O', 1);
@@ -73,11 +65,11 @@ void main(void) {
         //glcd_SetCursor(ynote, 6);
         //glcd_WriteChar8X8(' ', 1);
 
-       // for (i = 0; i < 8; i++)
-       // {
-        //   glcd_SetCursor(127-16, i);
-       //    glcd_WriteChar8X8('|', 1);
-      //  }
+        for (i = 0; i < 8; i++)
+       {
+          glcd_SetCursor(127-16, i);
+           glcd_WriteChar8X8('|', 1);
+       }
 
       //  ynote += 4;
 

@@ -1,4 +1,4 @@
 build/default/production/src/music.o:  \
-	/home/thibaut/Téléchargements/C18_Test_Project.X/src/music.c  \
-	/home/thibaut/Téléchargements/C18_Test_Project.X/src/music.h  \
+	/home/thibaut/workspace/ING4/microcontrollers/PicPicHero/src/music.c  \
+	/home/thibaut/workspace/ING4/microcontrollers/PicPicHero/src/music.h  \
 

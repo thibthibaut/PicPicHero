@@ -24,9 +24,20 @@ extern "C" {
 #define C2 5
 #define Q 0 //Quiet
 
+//Define length
+#define qc 1
+#define dc 2
+#define cr 4
+#define no 8
+#define np 12 //noir pointée
+#define bl 16
+#define ro 32
 
 
-  #define x 28 //total number of notes in song to be played - modify for specific song
+#define TEMPO 1
+
+
+  #define x 17 //total number of notes in song to be played - modify for specific song
 
 
 

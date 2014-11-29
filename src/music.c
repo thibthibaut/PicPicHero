@@ -1,15 +1,16 @@
 #include <p18f45k22.h>
 #include "music.h"
 
-unsigned char song[x] = {E, E, E, E, E, E, E, G, C, D, E, F, F, F, F, F, E, E, E, E, D, D, E, D, G, A, B, C2};
-unsigned char length[x] = {1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1};
+
+unsigned char prayer_in_c[x] = {A, A,   B,  C2,  E,  E, F,  E,  D,  D,  E,  F,  D,   F,  F,  G,  F};
+unsigned char length_pic[x] = {np, cr, no, no, np, cr, no, no, np, cr, cr, cr, no, np, cr, no, no};
 
 void play_music(void) {
     unsigned char i;
     for (i = 0; i < x; i++) {
         // Play Note
-        play_note(song[i]);
-        Delay10KTCYx(length[i]*10);
+        play_note(prayer_in_c[i]);
+        Delay10KTCYx(length_pic[i]*TEMPO);
         // Silence
         PR2 = 0b11111001;
         T2CON = 0b00000101;

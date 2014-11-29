@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=C18_Test_Project.X
+PROJECTNAME=PicPicHero
 
 # Active Configuration
 DEFAULTCONF=default
